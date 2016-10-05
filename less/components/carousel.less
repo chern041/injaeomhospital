@@ -1,0 +1,79 @@
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+html, body {
+  height:100%;
+  margin:0;
+  padding:0;
+}
+
+.carousel{
+	.carousel-text{
+		color: #FFF;
+		width: 100%;
+		text-align: center;
+		font-size: 34px;
+		line-height: 1.25em;
+		&.align-left{
+			text-align: left;
+		}
+	}
+	.carousel-text:lang(ko){
+		font-size: 50px;
+	}
+	h2{
+		font-size: 43px;
+		line-height: 1.45em;
+		font-family: 'Helvetica LT Std Black';
+	}
+	h2:lang(ko){
+		font-size: 100px;
+	}
+	span{
+		font-family: 'Helvetica LT Std Black';
+		font-style: italic;
+		&.signature{
+			font-size: 22px;
+		}
+	}
+	span:lang(ko){
+		font-weight: bold;
+		font-size: 30px;
+		font-style:normal;
+	}
+	.slider-caption{
+		position: relative;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+}
+
+@media(max-width:979px){
+	.carousel{
+		
+		
+	}
+}
+
+@media(max-width:767px){
+	.carousel{
+		.carousel-text{
+			font-size: 17px;
+		}
+		.carousel-text:lang(ko){
+			font-size: 17px;
+		}
+
+		h2{
+			font-size: 21px;
+		}
+		h2:lang(ko){
+			font-size: 21px;
+		}
+		span:lang(ko){
+			font-size: 14px;
+		}
+	}
+}
+

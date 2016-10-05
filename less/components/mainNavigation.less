@@ -1,0 +1,143 @@
+#home-page{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#about-page{ 
+  background: url(../../../images/about/about-1.jpg) no-repeat center center fixed #000; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+/*
+#contact-page{ 
+  background: url(../../../images/contact/contact-1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+ */
+
+#thankyou-page{ 
+  background: url(../../../images/thankyou/thankyou-form.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.mainNavigation{
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  .brand{
+    width: 25%;
+    max-width: 371px;
+  }
+  .nav{
+    width: 100%;
+    .phone{
+      float: right;
+      font-size: 18px;
+      background: #d3af35;
+      font-family: 'helvetica';
+      .phone-icon{
+         background: url(../../../images/global/phone-icon.png) no-repeat; 
+         padding: 3px 19px;
+      }
+      a{
+        color: #2c2c2c;
+      }
+    }
+  }
+  .nav-collapse{
+    width: 50%;
+    float: left;
+  }
+  .korean-nav{
+    a{font-weight: bold;}
+
+    .language{
+      a{font-weight: normal;}
+    }
+  }
+  a{color: #000;}
+  .aquarium-logo{
+    width: 25%;
+    max-width: 376px;
+    float:right;
+  }
+}
+
+@media(min-width:979px) and(max-width:1745px){
+  .mainNavigation{
+    .nav{
+      .phone{
+        display: none;
+      }
+    }
+  }
+}
+@media(max-width:979px){
+  .mainNavigation{
+    .brand{width: 371px;}
+    .nav{
+      .phone{
+        float: none;
+      }
+    }
+    .nav-collapse{
+      width: 100%;
+      float: none;
+    }
+  }
+}
+
+@media(max-width:767px){
+  #about-page{
+    background: url(../../../images/about/mobile/about-1.jpg) no-repeat center center fixed #000; 
+    background-size: 175%;
+  }
+
+  #contact-page{ 
+    background: url(../../../images/contact/contact-1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+   
+  .mainNavigation{
+    position: fixed;
+    top:0;
+    z-index: 1000;
+
+    
+
+    .navbar-inner{
+      padding: 0;
+      .container-fluid{padding: 0 5%;}
+      
+    }
+   
+    .brand{
+      padding: 0 0 5px 0;
+      margin: 5px 0 0 0;
+      width: 80%;
+    }
+  }
+
+
+  .navbar-fixed-bottom{
+    bottom:100%;
+  }
+
+
+}
