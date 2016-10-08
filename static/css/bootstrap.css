@@ -53,11 +53,17 @@ footer{
     -moz-column-rule: 1px solid lightblue; /* Firefox */
     column-rule: 1px solid lightblue;
   }
+
+ .footer-text-wrapper{
+  width: 250px;
+  margin: 0 auto;
+ } 
 .footer-text{
-  text-align: left;
+  text-align: center;
 }
 .copy-right{
-  text-align:center;
+  text-align:right;
+  right: 20px;
 }
 
 a:focus {
